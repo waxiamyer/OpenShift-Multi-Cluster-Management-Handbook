@@ -1,4 +1,4 @@
-  ---
+---
 kind: Route
 apiVersion: route.openshift.io/v1
 metadata:
@@ -9,6 +9,6 @@ spec:
   to:
     kind: Service
     name: clouds-api
-    weight: 100
   port:
     targetPort: 8080
+  weight: 100
